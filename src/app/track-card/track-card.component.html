@@ -1,0 +1,14 @@
+<div class="container mx-auto">
+  <div class="track-grid">
+
+    <div *ngFor="let track of this.formulaOneService.getTracks()" class="track-card">
+      <img [attr.src]="'https://flagsapi.com/' + track.country_code.substr(0, 2) + '/flat/64.png'" [attr.alt]="track.country_name + ' flag'"
+           class="object-cover rounded-2xl w-1/2"/>
+      <div class="w-1/2 space-y-2">
+        <p>{{ track.country_name }}</p>
+        <p>{{ track.location }}</p>
+      </div>
+    </div>
+
+  </div>
+</div>

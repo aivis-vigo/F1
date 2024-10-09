@@ -1,0 +1,11 @@
+.details {
+  @apply absolute h-full top-0 w-full bg-white text-xl px-10 lg:p-0;
+}
+
+.details-hidden {
+  @apply hidden;
+}
+
+.icon {
+  @apply w-10 h-10 content-center;
+}

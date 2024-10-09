@@ -1,0 +1,27 @@
+main {
+  @apply container mx-auto py-10 px-10;
+}
+
+h1 {
+  @apply text-5xl font-bungee-inline;
+}
+
+h2 {
+  @apply text-3xl font-bungee-inline;
+}
+
+span {
+  @apply font-bold;
+}
+
+button {
+  @apply w-full border border-blue-500 p-2 uppercase transition duration-300 hover:bg-blue-500 hover:text-white hover:scale-105;
+}
+
+.info-grid {
+  @apply grid grid-cols-1 grid-rows-6 gap-y-8 text-justify lg:grid-cols-2 lg:grid-rows-3 lg:gap-x-8;
+}
+
+.text-spacing {
+  @apply space-y-4 content-center;
+}

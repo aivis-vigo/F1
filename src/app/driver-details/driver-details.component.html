@@ -1,0 +1,42 @@
+<div [ngClass]="{details: isOpened, 'details-hidden': !isOpened}">
+  <div class="py-4">
+
+    <div class="flex justify-end">
+      <button (click)="toggleDetailView(isOpened)">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+             fill="#000000">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="flex flex-col mb-8 space-y-4 lg:flex-row lg:space-x-4">
+      <div class="flex justify-center lg:w-1/4">
+        <img src="{{driver.headshot_url}}" alt="{{driver.full_name}}" class="object-cover" />
+      </div>
+      <div class="space-y-4 lg:w-3/4">
+        <h2 class="text-3xl border-b-2 pb-2">Driver:</h2>
+        <p>Number: {{ driver.driver_number }}</p>
+        <p>Name: {{ driver.full_name }}</p>
+        <p>Country: {{ driver.country_code }}</p>
+        <p>Team: {{ driver.team_name }}</p>
+      </div>
+    </div>
+
+    <div class="mb-8">
+      <div class="space-y-4">
+        <h2 class="text-3xl border-b-2 pb-2">Car specs:</h2>
+        <p>Speed: {{ formulaOneService.getCarSpecs().speed || null }}</p>
+        <p>RPM's: {{ formulaOneService.getCarSpecs().rpm || null }}</p>
+        <p>Throttle % : {{ formulaOneService.getCarSpecs().throttle || null }}</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="space-y-4">
+        <h2 class="text-3xl border-b-2 pb-2">Team color:</h2>
+        <div class="h-24 border" [ngStyle]="{'background-color': '#' + driver.team_colour}"></div>
+      </div>
+    </div>
+  </div>
+</div>

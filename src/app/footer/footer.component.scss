@@ -1,0 +1,15 @@
+footer {
+  @apply border-dashed border-blue-500 border-t-2;
+}
+
+div {
+  @apply flex flex-row justify-center space-x-2 py-4;
+}
+
+svg {
+  @apply h-12;
+}
+
+svg {
+  @apply fill-current transition duration-300 hover:text-blue-500;
+}

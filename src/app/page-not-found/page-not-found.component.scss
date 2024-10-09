@@ -1,0 +1,7 @@
+div {
+  @apply container mx-auto h-svh content-center uppercase lg:flex lg:justify-center;
+}
+
+img {
+  @apply object-cover;
+}

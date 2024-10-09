@@ -1,0 +1,27 @@
+nav {
+  @apply relative border-double border-blue-500 border-b-4 py-4;
+}
+
+.desktop {
+  @apply container mx-auto hidden sm:flex sm:flex-row sm:space-x-4;
+}
+
+.mobile {
+  @apply px-12 lg:hidden;
+}
+
+.mobile-navigation-visible {
+  @apply fixed top-0 w-full h-screen z-10 px-12 pt-8 bg-white text-black duration-300 lg:hidden;
+}
+
+.mobile-navigation-hidden {
+  @apply translate-x-full duration-300;
+}
+
+.icon {
+  @apply w-10 h-10 content-center;
+}
+
+.active {
+  @apply text-blue-500;
+}
