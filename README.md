@@ -1,27 +1,39 @@
-# StudentLibrary
+# F1 Info Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+This project is built using **Angular v15** and provides information about the Formula 1 season, drivers, and tracks. You can navigate between three main pages to learn more about the sport, the drivers competing, and the countries where races take place.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 1. **Season Page**
+- This page offers a detailed explanation of the Formula 1 race weekend structure, including practice sessions, qualifying, and the race day.
 
-## Code scaffolding
+### 2. **Drivers Page**
+- Displays the current driver lineup.
+- Each driver has a **Driver Detail Page**, where more information about the selected driver is shown.
+- Information is fetched dynamically using an API.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 3. **Tracks Page**
+- Shows a list of countries where the F1 races are held.
+- Fetches track data and corresponding country flags from two separate APIs.
 
-## Build
+## APIs Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **F1 Data API**: This API is used to fetch the list of drivers and the track information.
+- **Country Flags API**: This API is used to retrieve the country flags for the tracks.
 
-## Running unit tests
+## How to Use
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aivis-vigo/F1.git
+    ```
 
-## Running end-to-end tests
+2. Install dependencies:
+    ```
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Start server:
+    ```
+   ng serve
+   ```
